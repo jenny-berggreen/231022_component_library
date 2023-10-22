@@ -18,3 +18,24 @@ body {
 .menu__button--active {
 	color: var(--color-primary);
 }
+
+.component {
+	display: none;
+	flex-flow: column nowrap;
+	gap: var(--spacing-large);
+}
+
+.component--visible {
+	display: flex;
+}
+
+.component-state {
+	display: flex;
+	width: 100%;
+	flex-flow: column nowrap;
+	gap: var(--spacing-small);
+}
+
+.component-state__name {
+	color: var(--color-tertiary);
+}
