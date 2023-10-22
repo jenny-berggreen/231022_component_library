@@ -41,6 +41,10 @@ body {
 	gap: var(--spacing-small);
 }
 
+.component-state--interactive {
+	margin-bottom: 1rem;
+}
+
 .component-state__name {
 	color: var(--color-inactive);
 }
