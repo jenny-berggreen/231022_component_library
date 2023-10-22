@@ -1,9 +1,12 @@
 :root {
 	--font-size-base: 30px;
 
+	--color-background: #FBFBFB;
+
 	--color-primary: black;
-	--color-secondary: hsl(0, 0%, 90%);
-	--color-tertiary: hsl(0, 0%, 65%);
+	--color-secondary: #EBEBEB;
+	--color-tertiary: #DCDCDC;
+	--color-inactive: #A2A2A2;
 
 	--color-accent-1: #A7DFFF;
 	--color-accent-2: #FF9A9A;
