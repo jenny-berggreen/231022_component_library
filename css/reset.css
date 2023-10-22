@@ -21,6 +21,10 @@ button {
 	cursor: pointer;
 }
 
+ul {
+	line-height: var(--spacing-medium);
+}
+
 li {
 	list-style: none;
 }
