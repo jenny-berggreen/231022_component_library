@@ -7,7 +7,7 @@ body {
 	padding: var(--spacing-medium);
 	display: flex;
 	flex-flow: row nowrap;
-	gap: var(--spacing-large);
+	gap: var(--spacing-larger);
 }
 
 .menu__button {
