@@ -1,0 +1,21 @@
+:root {
+	--font-size-base: 30px;
+
+	--color-primary: black;
+	--color-secondary: hsl(0, 0%, 90%);
+	--color-tertiary: hsl(0, 0%, 65%);
+
+	--color-accent-1: #A7DFFF;
+	--color-accent-2: #FF9A9A;
+	--color-accent-3: #F8DB78;
+
+	--color-accent-darker: #68C1F3;
+	--color-accent-even-darker: #2399DB;
+	--color-accent-darkest: #136DA0;
+
+	--border-radius: 12px;
+
+	--spacing-small: 0.5rem;
+	--spacing-medium: 1rem;
+	--spacing-large: 2rem;
+}
