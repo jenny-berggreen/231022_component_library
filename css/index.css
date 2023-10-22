@@ -3,5 +3,18 @@ html {
 }
 
 body {
-	background-color: #FBFBFB;
+	background-color: var(--color-background);
+	padding: var(--spacing-medium);
+	display: flex;
+	flex-flow: row nowrap;
+	gap: var(--spacing-large);
+}
+
+.menu__button {
+	color: var(--color-inactive);
+}
+
+.menu__button:hover,
+.menu__button--active {
+	color: var(--color-primary);
 }
