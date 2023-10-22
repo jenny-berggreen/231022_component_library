@@ -4,10 +4,15 @@ html {
 
 body {
 	background-color: var(--color-background);
-	padding: var(--spacing-medium);
+	padding: var(--spacing-small);
 	display: flex;
 	flex-flow: row nowrap;
 	gap: var(--spacing-larger);
+}
+
+.menu {
+	border-right: solid  1px var(--color-tertiary);
+	padding-right: var(--spacing-small);
 }
 
 .menu__button {
