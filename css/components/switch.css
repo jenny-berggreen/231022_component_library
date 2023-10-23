@@ -16,6 +16,10 @@
 	background-color: var(--color-tertiary);
 }
 
+.switch__container:hover {
+	cursor: pointer;
+}
+
 .switch__slider {
 	width: 55px;
 	height: 55px;
