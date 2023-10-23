@@ -30,7 +30,7 @@
 
 .accordion__content {
 	display: none;
-	padding: var(--spacing-x-small);
+	padding: var(--spacing-small);
 }
 
 .accordion--hover .accordion__button,
