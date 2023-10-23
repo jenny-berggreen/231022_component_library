@@ -52,3 +52,7 @@ body {
 .component-state--interactive .component-state__name {
 	color: var(--color-accent-2);
 }
+
+.font-size-smaller {
+	font-size: var(--font-size-smaller);
+}
