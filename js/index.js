@@ -40,3 +40,18 @@ function displayAccordionContent() {
 }
 
 accordionButton.addEventListener('click', displayAccordionContent);
+
+// ------------------------- switch -------------------------
+
+const switchComponent = document.querySelector('.component-state--interactive .switch__container');
+
+function addSwitchOffHoverClass() {
+	switchComponent.classList.add('switch--off-hover');
+}
+
+function removeSwitchOffHoverClass() {
+	switchComponent.classList.remove('switch--off-hover');
+}
+
+switchComponent.addEventListener('mouseover', addSwitchOffHoverClass);
+switchComponent.addEventListener('mouseleave', removeSwitchOffHoverClass);
