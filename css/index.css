@@ -49,10 +49,10 @@ body {
 	color: var(--color-inactive);
 }
 
-.component-state--interactive .component-state__name {
-	color: var(--color-accent-2);
+.--font-size-smaller {
+	font-size: var(--font-size-smaller);
 }
 
-.font-size-smaller {
-	font-size: var(--font-size-smaller);
+.--font-color-red {
+	color: var(--color-accent-2);
 }
