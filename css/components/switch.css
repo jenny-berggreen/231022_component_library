@@ -32,3 +32,15 @@
 .switch__slider--on {
 	justify-content: flex-end;
 }
+
+.switch--off-hover {
+	background-color: var(--color-inactive);
+}
+
+.switch--on {
+	background-color: var(--color-accent-darker);
+}
+
+.switch--on-hover {
+	background-color: var(--color-accent-even-darker);
+}
