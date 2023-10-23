@@ -40,3 +40,14 @@ function displayAccordionContent() {
 }
 
 accordionButton.addEventListener('click', displayAccordionContent);
+
+// ------------------------- switch -------------------------
+
+const switchComponent = document.querySelector('.component-state--interactive .switch__container');
+
+function toggleSwitchAndSlider() {
+	switchComponent.classList.toggle('switch--on');
+	switchComponent.classList.toggle('switch__slider--on');
+}
+
+switchComponent.addEventListener('click', toggleSwitchAndSlider);
