@@ -1,6 +1,7 @@
 const menuButtons = document.querySelectorAll('.menu__button');
 const components = document.querySelectorAll('.component');
 
+// display corresponding component when clicking menu buttons
 menuButtons.forEach(menuButton => {
 	const displayComponent = (event) => {
 		const button = event.currentTarget;
@@ -27,3 +28,15 @@ menuButtons.forEach(menuButton => {
 
 	menuButton.addEventListener('click', displayComponent);
 });
+
+
+// ------------------------- accordion -------------------------
+
+const accordion = document.querySelector('.component-state--interactive .accordion');
+const accordionButton = accordion.querySelector('.accordion__button');
+
+function displayAccordionContent() {
+	accordion.classList.toggle('accordion--expanded');
+}
+
+accordionButton.addEventListener('click', displayAccordionContent);
