@@ -13,5 +13,18 @@
 	width: 55px;
 	height: 55px;
 	border-radius: var(--border-radius);
-	border: solid 4px var(--color-accent-1);
+	border: solid 4px var(--color-accent-darker);
+}
+
+.checkbox--unchecked-hover {
+	border-color: var(--color-accent-even-darker);
+}
+
+.checkbox--checked {
+	background-color: var(--color-accent-darker);
+}
+
+.checkbox--checked-hover {
+	border-color: var(--color-accent-even-darker);
+	background-color: var(--color-accent-even-darker);
 }
