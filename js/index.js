@@ -157,6 +157,7 @@ function toggleRadiobuttonChosenClass(event) {
 	// Add "chosen" class to the clicked radio button
 	const clickedButton = event.currentTarget;
 	clickedButton.classList.add('radiobutton__button--chosen');
+	clickedButton.classList.remove('radiobutton__button--hover'); // don´t display hover effect right after click
 }
 
 function addRadiobuttonHoverClass(event) {
