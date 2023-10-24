@@ -104,3 +104,19 @@ button.addEventListener('mouseover', addButtonHoverClass);
 button.addEventListener('mouseleave', removeButtonHoverClass);
 button.addEventListener('mousedown', addButtonActiveClass);
 button.addEventListener('mouseup', removeButtonActiveClass);
+
+
+// ------------------------- checkbox -------------------------
+
+const checkbox = document.querySelector('.component-state--interactive .checkbox__input');
+
+function addCheckboxHoverClass() {
+	checkbox.classList.add('checkbox--unchecked-hover');
+}
+
+function removeCheckboxHoverClass() {
+	checkbox.classList.remove('checkbox--unchecked-hover');
+}
+
+checkbox.addEventListener('mouseover', addCheckboxHoverClass);
+checkbox.addEventListener('mouseleave', removeCheckboxHoverClass);
