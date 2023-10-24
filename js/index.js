@@ -143,3 +143,23 @@ function removeCheckboxHoverClass() {
 checkbox.addEventListener('mouseover', addCheckboxHoverClass);
 checkbox.addEventListener('mouseleave', removeCheckboxHoverClass);
 checkbox.addEventListener('click', toggleCheckboxCheckedClass);
+
+// ------------------------- radio button -------------------------
+
+const radiobuttons = document.querySelectorAll('.component-state--interactive .radiobutton__button');
+
+function toggleRadiobuttonChosenClass(event) {
+	// Remove "chosen" class from all radio buttons
+	radiobuttons.forEach(button => {
+	  button.classList.remove('radiobutton__button--chosen');
+	});
+  
+	// Add "chosen" class to the clicked radio button
+	const clickedButton = event.currentTarget;
+	clickedButton.classList.add('radiobutton__button--chosen');
+}
+
+// Attach click event listener to each radio button
+radiobuttons.forEach(button => {
+button.addEventListener('click', toggleRadiobuttonChosenClass);
+});
