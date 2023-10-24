@@ -1,19 +1,19 @@
 .checkbox {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	gap: var(--spacing-small);
 }
 
 .checkbox__input {
-	/* hide default checkbox */
-	appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-	/* make customized checkbox */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 55px;
 	height: 55px;
-	border-radius: var(--border-radius);
+	background-color: none;
 	border: solid 4px var(--color-accent-darker);
+	border-radius: var(--border-radius);
 }
 
 .checkbox--unchecked-hover {
@@ -27,4 +27,11 @@
 .checkbox--checked-hover {
 	border-color: var(--color-accent-even-darker);
 	background-color: var(--color-accent-even-darker);
+}
+
+.checkbox--checked::before,
+.checkbox--checked-hover::before {
+	color: white;
+	content: '\2713';
+	font-size: 40px;
 }
