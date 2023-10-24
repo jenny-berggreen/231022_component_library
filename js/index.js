@@ -159,7 +159,21 @@ function toggleRadiobuttonChosenClass(event) {
 	clickedButton.classList.add('radiobutton__button--chosen');
 }
 
+function addRadiobuttonHoverClass(event) {
+	const hoveredButton = event.currentTarget;
+	if (!hoveredButton.classList.contains('radiobutton__button--chosen')) { // hovering over non chosen button
+	  hoveredButton.classList.add('radiobutton__button--hover');			// display darker border color
+	}
+  }
+  
+  function removeRadiobuttonHoverClass(event) {
+	const hoveredButton = event.currentTarget;
+	hoveredButton.classList.remove('radiobutton__button--hover'); // display normal border color when mouse leaves button
+  }
+
 // Attach click event listener to each radio button
 radiobuttons.forEach(button => {
-button.addEventListener('click', toggleRadiobuttonChosenClass);
+	button.addEventListener('click', toggleRadiobuttonChosenClass);
+	button.addEventListener('mouseover', addRadiobuttonHoverClass);
+	button.addEventListener('mouseleave', removeRadiobuttonHoverClass);
 });
