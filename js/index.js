@@ -92,5 +92,15 @@ function removeButtonHoverClass() {
 	button.classList.remove('button--hover');
 }
 
+function addButtonActiveClass() {
+	button.classList.add('button--active');
+}
+
+function removeButtonActiveClass() {
+	button.classList.remove('button--active');
+}
+
 button.addEventListener('mouseover', addButtonHoverClass);
 button.addEventListener('mouseleave', removeButtonHoverClass);
+button.addEventListener('mousedown', addButtonActiveClass);
+button.addEventListener('mouseup', removeButtonActiveClass);
