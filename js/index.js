@@ -110,13 +110,36 @@ button.addEventListener('mouseup', removeButtonActiveClass);
 
 const checkbox = document.querySelector('.component-state--interactive .checkbox__input');
 
+function toggleCheckboxCheckedClass() {
+	checkbox.classList.toggle('checkbox--checked');
+
+	// After clicking, display correct hover state based on checkbox state
+	if (checkbox.classList.contains('checkbox--checked')) {		// checkbox is checked:
+        checkbox.classList.remove('checkbox--unchecked-hover');	// remove unchecked hover class
+        checkbox.classList.add('checkbox--checked-hover');		// display checked hover color
+    } 
+	else {														// checkbox is unchecked:
+        checkbox.classList.remove('checkbox--checked-hover');	// remove checked hover class
+        checkbox.classList.add('checkbox--unchecked-hover');	// display unchecked hover color
+    }
+}
+
 function addCheckboxHoverClass() {
-	checkbox.classList.add('checkbox--unchecked-hover');
+	if (!checkbox.classList.contains('checkbox--checked')) { // checkbox is unchecked
+		checkbox.classList.add('checkbox--unchecked-hover');
+	}
+	else {													// checkbox is checked
+		checkbox.classList.add('checkbox--checked-hover');
+	}
 }
 
 function removeCheckboxHoverClass() {
 	checkbox.classList.remove('checkbox--unchecked-hover');
+	checkbox.classList.remove('checkbox--checked-hover');
 }
+
+
 
 checkbox.addEventListener('mouseover', addCheckboxHoverClass);
 checkbox.addEventListener('mouseleave', removeCheckboxHoverClass);
+checkbox.addEventListener('click', toggleCheckboxCheckedClass);
