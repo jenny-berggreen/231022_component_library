@@ -79,3 +79,18 @@ switchComponent.addEventListener('mouseover', addSwitchHoverClass);
 switchComponent.addEventListener('mouseleave', removeSwitchHoverClass);
 switchComponent.addEventListener('click', toggleSwitchAndSlider);
 
+
+// ------------------------- button -------------------------
+
+const button = document.querySelector('.component-state--interactive .button');
+
+function addButtonHoverClass() {
+	button.classList.add('button--hover');
+}
+
+function removeButtonHoverClass() {
+	button.classList.remove('button--hover');
+}
+
+button.addEventListener('mouseover', addButtonHoverClass);
+button.addEventListener('mouseleave', removeButtonHoverClass);
