@@ -1,0 +1,17 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-small);
+}
+
+.checkbox__input {
+	/* hide default checkbox */
+	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	/* make customized checkbox */
+	width: 55px;
+	height: 55px;
+	border-radius: var(--border-radius);
+	border: solid 4px var(--color-accent-1);
+}
