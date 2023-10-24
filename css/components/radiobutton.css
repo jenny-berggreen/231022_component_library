@@ -1,0 +1,33 @@
+.radiobuttons-container {
+	display: flex;
+	flex-direction: row;
+	gap: var(--spacing-large);
+}
+
+.radiobutton {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--spacing-x-small);
+}
+
+.radiobutton__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 65px;
+	height: 65px;
+
+	border: solid 5px var(--color-accent-darker);
+	border-radius: var(--border-radius-max);
+}
+
+.radiobutton__button__dot {
+	width: 75%;
+	height: 75%;
+
+	border-radius: var(--border-radius-max);
+
+	background-color: var(--color-accent-darker);
+}
