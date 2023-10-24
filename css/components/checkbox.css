@@ -18,6 +18,7 @@
 
 .checkbox--unchecked-hover {
 	border-color: var(--color-accent-even-darker);
+	cursor: pointer;
 }
 
 .checkbox--checked {
@@ -25,6 +26,7 @@
 }
 
 .checkbox--checked-hover {
+	cursor: pointer;
 	border-color: var(--color-accent-even-darker);
 	background-color: var(--color-accent-even-darker);
 }
