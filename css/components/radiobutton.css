@@ -31,3 +31,7 @@
 
 	background-color: var(--color-accent-darker);
 }
+
+.radiobutton__button__dot--hidden {
+	display: none;
+}
