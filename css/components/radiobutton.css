@@ -39,6 +39,7 @@
 }
 
 .radiobutton__button--hover {
+	cursor: pointer;
 	border-color: var(--color-accent-even-darker);
 }
 
