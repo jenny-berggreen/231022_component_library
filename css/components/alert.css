@@ -42,3 +42,11 @@
 	width: 80%;
 	height: 80%;
 }
+
+.alert--hover .alert__button {
+	background-color: var(--color-accent-darker);
+}
+
+.alert--closed {
+	display: none;
+}
