@@ -180,3 +180,22 @@ radiobuttons.forEach(button => {
 });
 
 // ------------------------- alert -------------------------
+
+const alert = document.querySelector('.component-state--interactive .alert');
+const alertButton = document.querySelector('.component-state--interactive .alert__button');
+
+function addAlertHoverClass() {
+	alert.classList.add('alert--hover');
+}
+
+function removeAlertHoverClass() {
+	alert.classList.remove('alert--hover');
+}
+
+function closeAlert() {
+	alert.classList.add('alert--closed');
+}
+
+alertButton.addEventListener('mouseenter', addAlertHoverClass);
+alertButton.addEventListener('mouseleave', removeAlertHoverClass);
+alertButton.addEventListener('click', closeAlert);
