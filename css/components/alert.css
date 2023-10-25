@@ -1,0 +1,43 @@
+.alert {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-x-small);
+
+	width: 587px;
+	height: 65px;
+
+	font-size: 17px;
+
+	border-radius: var(--border-radius);
+	background-color: var(--color-accent-1);
+}
+
+.alert::before {
+	content: '';
+	display: inline-block;
+
+	width: 1.5rem;
+	height: 1.5rem;
+
+	margin-left: 10px;
+
+	background: url('../../assets/images/information-icon.png') no-repeat bottom;
+	background-size: contain;
+}
+
+.alert::after {
+	position: absolute;
+	right: 0;
+	content: '';
+	display: inline-block;
+
+	width: 1.2rem;
+	height: 1.2rem;
+
+	margin-right: 10px;
+	
+	background: url('../../assets/images/x.png') no-repeat bottom;
+	background-size: contain;
+}
