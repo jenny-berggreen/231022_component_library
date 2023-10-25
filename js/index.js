@@ -178,3 +178,5 @@ radiobuttons.forEach(button => {
 	button.addEventListener('mouseover', addRadiobuttonHoverClass);
 	button.addEventListener('mouseleave', removeRadiobuttonHoverClass);
 });
+
+// ------------------------- alert -------------------------
